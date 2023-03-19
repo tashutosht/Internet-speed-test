@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+#speedometer {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+#needle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(0deg);
+	width: 6px;
+	height: 150px;
+	background-color: red;
+	border-radius: 3px;
+	transform-origin: bottom center;
+	transition: transform 1s ease-in-out;
+}
+
+#inner-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+#middle-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+	background-color: #f2f2f2;
+	border-radius: 50%;
+}
+
+#outer-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 150px;
+	height: 150px;
+	background-color: #19d39f;
+	border-radius: 50%;
+}
+
+#text-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#speed {
+	font-size: 50px;
+	font-weight: bold;
+	margin: 0;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
